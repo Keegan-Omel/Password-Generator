@@ -4,9 +4,10 @@ var generateBtn = document.querySelector("#generate");
 //function runs the password generator, charset options, and randomizing of charsets and the printing of password to text area
 function writePassword() {
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-//this posts/prints the password to the text area in HTML
-  passwordText.value = password;
+  
+  var passwordText = document.querySelector("#password"); //says to be printed in the html text area 
+
+  passwordText.value = password; //prints in html txt area
 
 }
 //add functionality to click the password generators generate button and start running the program, loops, etc
@@ -25,7 +26,7 @@ function generatePassword() {
     var numericChars = "0123456789";
     var specialChars = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
     var passwordChars = "";
-    //confirm adds a message
+    //confirm adds a pop up message box at the top of the browser
     var includeLowercase = confirm("Include lowercase characters?");
     var includeUppercase = confirm("Include uppercase characters?");
     var includeNumeric = confirm("Include numeric characters?");
