@@ -1,11 +1,11 @@
-// an html elemenent that is selected with an id of #generate
+// an html elemenent that is selected with an id of generate
 var generateBtn = document.querySelector("#generate");
 
 //function runs the password generator, charset options, and randomizing of charsets and the printing of password to text area
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-//this posts/prints the password to the text area in HTML
+
   passwordText.value = password;
 
 }
@@ -25,7 +25,7 @@ function generatePassword() {
     var numericChars = "0123456789";
     var specialChars = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
     var passwordChars = "";
-    //confirm adds a message
+    //confirm adds a message prompting users to select specific character types
     var includeLowercase = confirm("Include lowercase characters?");
     var includeUppercase = confirm("Include uppercase characters?");
     var includeNumeric = confirm("Include numeric characters?");
