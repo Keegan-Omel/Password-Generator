@@ -7,7 +7,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-  
+
 }
 //add functionality to click the password generators generate button and start running the program, loops, etc
 generateBtn.addEventListener("click", writePassword); 
@@ -59,4 +59,4 @@ function generatePassword() {
       alert(password)
       return password;
 
-}
+  }
